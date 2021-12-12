@@ -2,10 +2,11 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of my projects.
 nav: true
-display_categories: [work, fun]
+display_categories: [design, data science]
 horizontal: false
+order: 1
 ---
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
