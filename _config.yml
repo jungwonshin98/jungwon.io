@@ -228,7 +228,7 @@ responsive_image:
 # Jekyll Diagrams
 # -----------------------------------------------------------------------------
 
-jekyll-diagrams:
+# jekyll-diagrams:
     # configuration, see https://github.com/zhustec/jekyll-diagrams.
     # feel free to comment out this section if not using jekyll diagrams.
 
@@ -285,3 +285,21 @@ popper:
 medium_zoom:
   version: "1.0.6"
   integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
+
+  # Jekyll Imagemagick
+
+  imagemagick:
+  enabled: true
+  widths:
+    - 1024
+    - 512
+    - 0
+  input_directories:
+    - assets/img/blog
+    - assets/img/pages
+  input_formats:
+    - ".png"
+    - ".tiff"
+  output_formats:
+    jpg: "-quality 93% -define jpeg:dct-method=float -strip -interlace Plane"
+    webp: "-quality 100%"
